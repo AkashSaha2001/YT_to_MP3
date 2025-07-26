@@ -4,24 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>YouTube to MP3 Converter</h1>
-        <input type="text" id="videoUrl" placeholder="Enter YouTube video link" />
-        <button onclick="handleConvert()">Convert</button>
-        <div id="loading" style="display:none;">Converting...</div>
+    <div class="mt-5">
 
-        <div id="result" style="display:none;">
-            <img id="thumbnail" src="" />
-            <h2 id="title"></h2>
-            <a id="downloadLink" href="#" download>Download MP3</a>
+        <div class="row">
+            <!-- left bar -->
+            <div class="col-md-2" style="background-color:  #ff0000">
+                <div class="container">
+                    <h4>Top Trending hollywood Songs </h4>
+
+                </div>
+            </div>
+
+
+            <!-- center bar -->
+            <div class="col md-8">
+                <div class="container">
+
+                    <!-- center bar Heading -->
+                    <div class="heading m-5">
+                        <p><b>Youtube to MP3 Converter</b></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9" style="background-color: yellow;">
+
+                            <!-- center bar search title -->
+                            <div class="search-title mt-5" style="padding: 10px;">
+                                <p><b>Please insert a valid YouTube video URL</b></p>
+                            </div>
+
+                            <!-- center bar search bar -->
+                            <div class="search-bar mt-0">
+                                <input type="text" name="search" class="search-input" id="username"
+                                    placeholder="Paste the URL here">
+                                <div class="button-search">
+                                    <a href="#" class="search-btn" onclick="find()">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- center bar song img section -->
+                        <div class="col-md-3" style="background-color: green;">
+                            <div class="song-img">
+                                <div class="aboutimage">
+                                    <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
+                                        alt="GitHub Logo">
+                                </div>
+                                <div class="song-details mt-2">
+                                    <h6>Song name :</h6>
+                                    <h6>Song description : </h6>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <p>YouTube to MP3 Converter
+With our YouTube to MP3 Converter (shortly YTMP3), you are able to convert your favorite YouTube videos to MP3 (audio) or MP4 (video) files for free. YTMP3 is designed to work on both mobile and desktop devices without the installation of any app.
+
+How to use our YouTube to MP3 Converter:
+
+1. Open YouTube.com and search for a video you would like to download.
+
+2. Once you have found a video, you need to copy the video URL. The simplest way is to copy the video URL directly from your browser's address bar. Please note: The video must be playing to obtain the correct URL.
+
+3. Paste the video URL into our YouTube converter and choose your download format. By default, the video will be converted to an MP3 (audio) file.
+
+4. Click the „Convert” button to start the conversion of the YouTube video. The conversion may take a few moments. Please note: Only videos with a maximum length of 90 minutes can be converted.
+
+5. Once the conversion is complete, you can download the converted file by clicking the „Download” button.
+
+With the usage of YTMP3, you're accepting our Terms of Use. We can't thank you enough for using our YouTube to MP3 Converter.
+
+Tip: If you prefer to search for YouTube videos by keyword, you might want to try MP3Juice.</p>
+
+
+                </div>
+            </div>
+
+
+
+            <!--right bar  -->
+            <div class="col-md-2" style="background-color:  #ff0000">
+                <div class="container">
+                    <h4>Top Trending hollywood Songs </h4>
+
+                </div>
+
+            </div>
         </div>
+
     </div>
 
 </body>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- 
+<h1>YouTube to MP3 Converter</h1>
+<input type="text" id="videoUrl" placeholder="Enter YouTube video link" />
+<button onclick="handleConvert()">Convert</button>
+<div id="loading" style="display:none;">Converting...</div>
+
+<div id="result" style="display:none;">
+    <img id="thumbnail" src="" />
+    <h2 id="title"></h2>
+    <a id="downloadLink" href="#" download>Download MP3</a>
+</div> -->
