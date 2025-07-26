@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>YouTube to MP3 Converter</h1>
+        <input type="text" id="videoUrl" placeholder="Enter YouTube video link" />
+        <button onclick="handleConvert()">Convert</button>
+        <div id="loading" style="display:none;">Converting...</div>
+
+        <div id="result" style="display:none;">
+            <img id="thumbnail" src="" />
+            <h2 id="title"></h2>
+            <a id="downloadLink" href="#" download>Download MP3</a>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
